@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Skranji';
+  background-color: #F7ECDE;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: #F2858E;
+  opacity: 0.2;
+}
+
+button::selection {
+  color: inherit;
+  background-color: inherit;
+  opacity: inherit;
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  color: #000;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  background-color: #FEC260;
+  width: 100%;
+  height: 25px;
+  z-index: -1;
+  bottom: 7px;
+  left: 0;
+  transition: height 1s;
+  border-radius: 8px;
+}
+
+h1:hover::before {
+  height: 40px;
+}
+
+h2 {
+  font-size: 25px;
+  background-image: linear-gradient(to right, #42A65C, #B1AC49);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+label {
+  color: #4e9ce0;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+ 
+}
+
+
+.btn-submit {
+  background-color: #f29877;
+  color: #fff;
+  border: 1px solid rgba(242, 152, 119, 0.47);
+  padding: 6px 32px;
+  border-radius: 50px;
+  transition: all 1s;
+}
+
+.btn-submit:hover {
+  background-color: #f17446;
+}
+
+.table thead th {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-visit {
+  background-color: rgb(126, 196, 126);
+  color: #fff;
+  border: 1px solid rgba(126, 196, 126, 0.47);
+  padding: 6px 12px;
+  border-radius: 50px;
+  transition: all 1s;
+}
+
+.btn-visit:hover {
+  background-color: #197519;
+}
+
+.btn-delete  {
+  background-color: #e75a5a;
+  color: #fff;
+  border: 1px solid rgba(231, 90, 90, 0.47);
+  padding: 6px 12px;
+  border-radius: 50px;
+  transition: all 1s;
+}
+
+.btn-delete:hover {
+  background-color: #920a0a;
+}
+
+.bookmark-body{
+  border-top: 2px dashed ;
+  border-bottom: 2px dashed;
+}
+
+.box-container{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pink-bg {
+  background-color: #b8a9aa;
+}
+
+.circles span {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.circles span:nth-child(1) {
+  background-color: #e75a5a;
+}
+
+.circles span:nth-child(2) {
+  background-color: #7ec47e;
+}
+
+.circles span:nth-child(3) {
+  background-color: #f29877;
+}
+
+.box-container p {
+  font-size: 21px;
+  color: #fff;
+}
+
+.box-container ol li {
+  font-size: 18px;
+  color: #fff;
+}
+
+.box-container ol li i {
+  color: #B6DCCE;
+}
